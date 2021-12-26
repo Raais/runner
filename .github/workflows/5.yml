@@ -2,7 +2,7 @@
 # https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#a-actions-usage
 
 on:
-  #schedule:
+  schedule:
     - cron:  '*/5 * * * *'
     
 jobs:
