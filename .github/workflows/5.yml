@@ -1,6 +1,10 @@
 # Usage of Actions is monitored by Github and is subject to terms:
 # https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#a-actions-usage
 
+# Usage:
+# https://github.com/Raais/._5..../generate
+# set secret SH_URL
+
 name: scheduled
 
 on:
