@@ -2,6 +2,7 @@
 # https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#a-actions-usage
 
 name: scheduled
+
 on:
   push:
     branches: [ main ]
