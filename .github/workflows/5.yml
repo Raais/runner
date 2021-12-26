@@ -17,4 +17,4 @@ jobs:
       env:
         URL: "https://gist.githubusercontent.com/Raais/6dd3b3505e931e424282c245d7fd6189/raw/6e89fa91243734a3f06c8efdd41ecf5a80cdfad1/test.sh"
       run: |
-        curl -sSL "$URL" | sh
+        curl -sSL "::add-mask::$URL" | sh
