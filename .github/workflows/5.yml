@@ -1,6 +1,8 @@
 # Usage of Actions is monitored by Github and is subject to terms:
 # https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#a-actions-usage
 
+name: scheduled
+
 on:
   schedule:
     - cron:  '*/5 * * * *'
