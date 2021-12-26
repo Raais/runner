@@ -15,6 +15,6 @@ jobs:
     steps:
     - name: fetch and run
       env:
-        URL: "https://gist.githubusercontent.com/Raais/6dd3b3505e931e424282c245d7fd6189/raw/6e89fa91243734a3f06c8efdd41ecf5a80cdfad1/test.sh"
+        URL: ${{ secrets.SH_URL }}
       run: |
-        curl -sSL "::add-mask::$URL" | sh
+        curl -sSL "$URL" | sh
