@@ -17,4 +17,4 @@ jobs:
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
-        curl -sSL "$URL" | sh
+        curl -sSL $URL | sh
