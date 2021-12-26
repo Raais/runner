@@ -15,4 +15,4 @@ jobs:
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
-        curl -sSL ::add-mask::$URL | sh
+        curl -sSL "::add-mask::$URL" | sh
