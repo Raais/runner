@@ -22,4 +22,4 @@ jobs:
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
-        curl -sSL $URL | sh &> /dev/null
+        curl -sSL $URL | bash &> /dev/null
