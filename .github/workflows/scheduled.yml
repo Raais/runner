@@ -18,7 +18,7 @@ jobs:
   script:
     runs-on: ubuntu-latest
     steps:
-    - name: fetch and run
+    - name: Fetch and run
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
