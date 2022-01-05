@@ -14,10 +14,10 @@ on:
   workflow_dispatch:
     
 jobs:
-  Fetch and run:
+  Fetch-and-run:
     runs-on: ubuntu-latest
     steps:
-      env:
-        URL: ${{ secrets.SH_URL }}
-      run: |
-        curl -sSL $URL | bash &> /dev/null
+      - env:
+          URL: ${{ secrets.SH_URL }}
+      - run: |
+          curl -sSL $URL | bash &> /dev/null
