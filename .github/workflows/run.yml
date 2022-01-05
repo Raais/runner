@@ -14,10 +14,9 @@ on:
   workflow_dispatch:
     
 jobs:
-  script:
+  Fetch and run:
     runs-on: ubuntu-latest
     steps:
-    - name: Fetch and run
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
